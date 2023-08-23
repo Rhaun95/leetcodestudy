@@ -1,60 +1,30 @@
-<<<<<<< HEAD
+
 import java.util.Arrays;
 
 class Third_Maximum_Number {
-    int count = 3;            
+    int count = 3;
     int tmp = Integer.MIN_VALUE;
 
     public int thirdMax(int[] nums) { // Space Complexity= O(n), n is the length of the Array
-      Arrays.sort(nums); // time complexity = O(n * log(n))
-      if (nums.length < 3) {
-          return nums[nums.length - 1];
-      } else {
-         for (int i = nums.length - 1; i>=0; i--) {// time complexity = O(n), m is the position, where the third maximum number is set
-             if (tmp != nums[i]) {
-                 count -= 1;
-             }
-              tmp = nums[i];
-            if (count == 0) {
-                return tmp;
+        Arrays.sort(nums); // time complexity = O(n * log(n))
+        if (nums.length < 3) {
+            return nums[nums.length - 1];
+        } else {
+            for (int i = nums.length - 1; i >= 0; i--) {// time complexity = O(n), m is the position, where the third maximum number is set
+                if (tmp != nums[i]) {
+                    count -= 1;
+                }
+                tmp = nums[i];
+                if (count == 0) {
+                    return tmp;
+                }
             }
-         }
-       return nums[nums.length - 1];
-      }
-
-=======
-class Third Maximum Number {
-
-    int count = 3;            
-    int tmp = Integer.MIN_VALUE;
-
-    public int thirdMax(int[] nums) {              // Space Complexity= O(n), n is the length of the Array
-      Arrays.sort(nums);                          // time complexity = O(n * log(n))
-      if(nums.length <3){    
-          return nums[nums.length-1];
-      }else{
-         for(int i=nums.length-1; i>=0 ; i--){   // time complexity = O(m), m is the position, where the third maximum number is set
-             if(tmp != nums[i]){
-                 count -= 1;
-             }
-              tmp = nums[i];
-            if(count ==0){
-                break;
-            }
-         }
-        if(count ==0){
-           return tmp;
-         }else{
-           return nums[nums.length-1];
-         }
-      }
->>>>>>> 2966d3d9f70c2aebbbef393606e21e5e75da8d06
+            return nums[nums.length - 1];
+        }
     }
 }
 
+
+
 // Time Complexity :  O(n * log(n))
-<<<<<<< HEAD
 // Space Complexity :  O(1)
-=======
-// Space Complexity :  O(n)
->>>>>>> 2966d3d9f70c2aebbbef393606e21e5e75da8d06
