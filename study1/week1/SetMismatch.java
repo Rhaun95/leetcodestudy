@@ -1,10 +1,10 @@
 import java.util.Hashtable;
-class Solution {
-    Hashtable<Integer, Boolean> checklist = new Hashtable<Integer, Boolean>();
+class SetMismatch {
+    Hashtable<Integer, Boolean> checklist = new Hashtable<>(); // potentially Space Complexity O(n)
     int[] res = new int[2]; // Space Complexity O(1)
 
     public int[] findErrorNums(int[] nums) {
-        int length = nums.length; // Space Complexity O(length)
+        int length = nums.length; // Space Complexity O(1)
 
         for (int num : nums) {  // Time Complexity O(length)
             if (checklist.containsKey(num)) {
