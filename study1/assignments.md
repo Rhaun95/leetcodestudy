@@ -1,5 +1,37 @@
 ***All problems within a week are ordered from the easiest to hardest***
 
+# Week 3
+
+## Easy
+
+1. #Array, #DP [Pascal's Triagle](https://leetcode.com/problems/pascals-triangle/description/)
+1. #DP, #Memoization, #Array [Clibming stairs](https://leetcode.com/problems/climbing-stairs/description/)
+1. #DP, #Array, [Best time to buy and sell stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
+## Medium
+1. #Array, #HashTable, #Greedy, #Sorting, #Heap [Reduce array size to the half](https://leetcode.com/problems/reduce-array-size-to-the-half/description/)
+1. #Array, #HashTable, #String [Evaluate the bracket pairs of a string](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/description/)
+1. #DFS, #BFS, #Graph, [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/description/)
+1. #Array, #HashTable, #String [Vowel Spellchecker](https://leetcode.com/problems/vowel-spellchecker/description/)
+
+# Week 2
+
+## Easier
+
+1. #Tree, #BFS, #BinaryTree [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+1. #Array, #Hash Table, #Sorting [Sort the people](https://leetcode.com/problems/sort-the-people/)
+1. #DFS, #BST [Range of Sum BST](https://leetcode.com/problems/range-sum-of-bst/description/)
+1. #DP [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/description/)
+
+## Easy
+
+1. #HashTable, #String, #GreedyAlgorithm [Longest palindrome](https://leetcode.com/problems/longest-palindrome/description/)
+
+## Medium
+
+1. #Tree, #BFS, #DFS [Time needed to Inform all employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)
+1. #HashTable, #Greedy, #Sorting, #Heap #Counting [Task Scheduler](https://leetcode.com/problems/task-scheduler/description/)
+
 # Week 1
 
 ## Easy

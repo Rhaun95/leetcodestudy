@@ -29,8 +29,8 @@ class Invert_Binary_Tree {
         return root;
     }
     /**
-     * Space Complexity : O(2^d), d is the depth of the TreeNode
-     In worst case, the binary tree is balanced and has the depth of d
+     * Space Complexity :  O(n),  n is the number of nodes
+     In worst case, the binary tree is unbalanced and there will be n calls in the stack stack
 
      * Time Complexity : O(n), n is the number of nodes
      every Node is visited once in the algorithm. It needs linear time.

@@ -21,8 +21,7 @@ class Range_Sum_of_BST {
      * Time Complexity : O(n)
        The algorithm visits each node in the binary tree once, resulting in a linear time complexity.
 
-     * Space Compexity : O(1)
-      Since the algorithm uses only one global variable, there is no need for additional memory space.
-      Thus, the space complexity remains constant.
+     * Space Compexity : O(n)
+        Because each node is visited at least once, there will also be 'n' nodes in the call stack
     */
 }
