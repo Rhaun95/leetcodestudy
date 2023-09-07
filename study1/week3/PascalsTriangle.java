@@ -9,6 +9,10 @@ class PascalsTriangle {
             res.add(calculateRow(res.get(start)));
             start++;
         }
+// feedback : using conventional for loop
+//        for (int start = 0 ; start < numRows - 1 ; ++start) {
+//            res.add(calculateRow(res.get(start)));
+//        }
         return res;
     }
 
@@ -33,13 +37,13 @@ class PascalsTriangle {
     }
 
     /**
-     * Time complexity : O(numRow)
-         Like the pyramid, the number of row element increases with each step.
-         The algorithm need a linear time.
+     * Time complexity : O(numRow^2)
+         There are two nested for loops.
 
-     * Space complexity : O(numRow)
-        The result list is composed of sublist that correspond to the input.
-        The algorithm takes also linear space as well.
+     * Space complexity : O(n^2)
+        In res will be stored n(n+1)/2 numbers
      */
+
+
 
 }

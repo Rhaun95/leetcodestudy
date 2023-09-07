@@ -2,14 +2,14 @@ class LongestPalindrome {
 
     public int longestPalindrome(String s) {
         int n = s.length();
-        int odd = 0;
-        HashMap<Character, Integer> list = new HashMap<>();
+        HashMap<Character, Integer> countChar = new HashMap<>();
 
         for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
             list.put(ch, list.getOrDefault(ch, 0) + 1);
         }
 
+        int odd = 0;
         for (int value : list.values()) {
             if (value % 2 != 0 ){
                 odd++;
