@@ -1,23 +1,28 @@
 class Solution {
     //dp
     public int climbStairs(int n) {
-        if (n <= 2) {
+        if (n <= 3) {
             return n;
         }
-        int[] dp = new int[n+1];
+        int first = 3;
+        int second = 2;
+        int count = 4;
+        int res = 0;
 
-        dp[1] = 1;
-        dp[2] = 2;
-        for (int i = 3; i <= n; i++) {
-            dp[i] = dp[i-1] + dp[i-2];
+        while(count <= n){
+            res = first + second;
+            second = first;
+            first = res;
+            count++;
         }
-        return dp[n];
+        return res;
+
     }
     /*
     T : O(N)
         iterate till n step is reached
 
-    S : O(N)
+    S : O(1)
         dp stores n elements. Each elements has the number of distinct ways to climb up n steps
     */
 

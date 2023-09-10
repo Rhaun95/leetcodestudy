@@ -9,7 +9,7 @@ class Reduce_Array_Size {
             map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
         }
 
-        PriorityQueue<Map.Entry<Integer, Integer>> maxHeap= new PriorityQueue<>(
+        PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>(
                 (a, b)->{
                     return b.getValue()-a.getValue();
                 }); //Max heap, to give priority to the high frequency element
@@ -17,6 +17,7 @@ class Reduce_Array_Size {
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             maxHeap.offer(entry);
         }
+
         int size = arr.length;
         int res = 0;
         while (size > n/2) {

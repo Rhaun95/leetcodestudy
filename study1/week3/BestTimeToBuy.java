@@ -8,10 +8,7 @@ class Solution {
             if (small > prices[i]) {
                 small = prices[i];
             } else {
-                int diff = prices[i] - small;
-                if (diff > max) {
-                    max = diff;
-                }
+                max = Math.max(prices[i] - small, max);
             }
         }
         return max;

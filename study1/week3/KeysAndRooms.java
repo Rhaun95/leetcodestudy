@@ -11,6 +11,7 @@ class Solution {
             }
         }
         return true;
+//        return !isVisited.stream().anyMatch(visit -> !visit);
     }
 
     public void dfs(int room, boolean[] isVisited, List<List<Integer>> rooms){
