@@ -1,4 +1,4 @@
-class Solution {
+class LongestSubsequences {
     public int[] answerQueries(int[] nums, int[] queries) {
         int[] res = new int[queries.length];
         Arrays.sort(nums);
